@@ -1,0 +1,19 @@
+<div>
+
+    <div class="row">
+      <div *ngFor="let noticia of noticias" class="card col-3 mb-1">
+        <div class="card-body">
+          <h5 class="card-title"> {{noticia.titulo}} </h5>
+          <hr>
+          <p class="card-subtitle mb-2 text-muted text-justify"> {{noticia.cuerpo}} </p>
+          <p class="text-muted font-weight-light d-flex justify-content-end"><small>{{noticia.fecha_emision | date:'MMM d, y' }}</small></p>
+        </div>
+      </div>  
+    </div>
+    
+    <div class="d-flex justify-content-end mt-1 mb-2">
+      <a routerLink="/lista-noticias">Más noticias</a>
+    </div>
+    
+
+</div>

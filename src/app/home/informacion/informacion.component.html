@@ -1,0 +1,21 @@
+ <div>
+
+  <p style="font-size: 170%; font-family: 'Times New Roman', Times, serif; color: rgb(20, 43, 68)">Acerca de OSDE</p>
+
+  <div class="d-flex justify-content-center">
+
+    <ul class="list-group list-group-horizontal-sm">
+      <li *ngFor="let info of informacion" class="list-group-item"><a href="#{{info.nombre}}"> {{info.nombre}} </a></li>
+    </ul>
+
+  </div>
+
+  <div *ngFor="let info of informacion" class="m-4 text-justify" id="{{info.nombre}}">
+    <p class="titulo"> {{info.nombre}} </p>
+    <p> {{info.cuerpo}} </p>
+    <p> Desde sus inicios los sindicatos argentinos dedicaron una parte de su actividad a lo que con el tiempo comenzó a llamarse "obra social". Inicialmente la obra social estaba dirigida a prestar ayuda frente a la enfermedad y la muerte (entierros). Con el paso del tiempo nuevas preocupaciones se fueron sumando, como la vivienda y el turismo social.
+      A mediados del siglo XX los sindicatos asumen el rol preponderante en el desarrollo de estructuras sociales que dieran respuestas a la problemática de la salud. En un contexto histórico de desarrollo industrial acelerado y el nacimiento de un movimiento político que instalaba en el centro de la escena a la clase trabajadora, el peronismo. En concordancia con el desarrollo de una concepción de Estado que comenzaba a bregar por el bienestar de sus ciudadanos. A partir de 1943, La expansión de los servicios estatales de salud, al igual que su mejor dotación en recursos humanos y materiales, convirtió al hospital público en un centro de nuevos profesionales y en un lugar de atención médica ya no destinado sólo a las clases bajas.
+      En 1935 la Unión de Obreros Municipales de la Ciudad de Buenos Aires (actualmente SUTECBA) construyó un complejo residencial en las Sierras de Córdoba, para facilitar las vacaciones de los afiliados y sus familias. Dos años después lo mismo hacía el sindicato bancario. Por la misma época la Unión Ferroviaria acordó con el Estado la construcción de la Clínica Ferroviaria en Buenos Aires y utilizó sus sedes en todo el país para establecer una cadena de cines conocidos como "Cine Unión". </p>
+  </div>
+
+</div> 

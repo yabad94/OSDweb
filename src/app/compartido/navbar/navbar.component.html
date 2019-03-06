@@ -1,0 +1,41 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand font-weight-bold" routerLink="home">OSDE</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sectores
+        </a>
+        <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdown">
+          <li *ngFor="let sector of sectores" class="dropdown-item"> {{sector}} </li>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+
+      <li class="nav-item"> 
+        <a class="nav-link" href="#">Iniciar sesión <img src="https://www.iconsdb.com/icons/preview/white/user-xxl.png" class="ml-1 mb-1 d-inline" width="18" height="18"></a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar contenido" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="/src/assets/imágenes/busqueda.png" width="22" height="22"></button>
+    </form>
+  </div>
+</nav>
